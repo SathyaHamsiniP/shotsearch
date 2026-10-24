@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "shotsearch-local"
+version = "0.2.0"
+description = "Local image text search website with SQLite and semantic retrieval"
+requires-python = ">=3.10"
+dependencies = ["Flask>=3.1,<4", "Pillow>=10,<13", "sentence-transformers>=3,<6"]
+[tool.setuptools.packages.find]
+include = ["shotsearch*"]
+
+[tool.setuptools.package-data]
+shotsearch = ["templates/*.html", "static/*.css", "static/*.js"]
