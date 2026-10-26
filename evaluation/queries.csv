@@ -1,0 +1,15 @@
+query,mode,expected_files,split
+traffic,hybrid,traffic.png,development
+congestion,hybrid,traffic.png,development
+Python code,hybrid,python_sum.png;python_loop.png,development
+Java code,hybrid,java.png,development
+"""course registration""",keyword,course.png,development
+ModuleNotFoundError,keyword,module_error.png,development
+missing package problem,hybrid,module_error.png,development
+"""database connection""",keyword,database_error.png,development
+restaurant food options,hybrid,menu.png,development
+flight ticket,hybrid,,development
+PermissionError,keyword,permission_error.png,holdout
+books due date,hybrid,notice.png,holdout
+Boolean logic,keyword,logic.png,holdout
+dentist appointment,hybrid,,holdout
