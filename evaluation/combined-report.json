@@ -1,0 +1,193 @@
+{
+  "note": "Synthetic fixtures measure a narrow baseline, not real-world accuracy. Timings exclude model startup.",
+  "split": "development",
+  "processing": {
+    "indexed": 25,
+    "unchanged": 0,
+    "reused": 0,
+    "empty": 1,
+    "failed": 0
+  },
+  "queries": [
+    {
+      "query": "traffic",
+      "mode": "hybrid",
+      "expected": [
+        "traffic.png"
+      ],
+      "actual": [
+        "traffic.png",
+        "weather.png",
+        "crypto.png",
+        "train.png",
+        "meeting.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 4,
+      "correct_empty": null,
+      "seconds": 0.6114
+    },
+    {
+      "query": "congestion",
+      "mode": "hybrid",
+      "expected": [
+        "traffic.png"
+      ],
+      "actual": [
+        "train.png",
+        "crypto.png",
+        "traffic.png",
+        "weather.png",
+        "phrase_distractor.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "irrelevant_results": 4,
+      "correct_empty": null,
+      "seconds": 0.6417
+    },
+    {
+      "query": "Python code",
+      "mode": "hybrid",
+      "expected": [
+        "python_loop.png",
+        "python_sum.png"
+      ],
+      "actual": [
+        "python_loop.png",
+        "python_sum.png",
+        "course.png",
+        "syntax_error.png",
+        "logic.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 3,
+      "correct_empty": null,
+      "seconds": 0.6591
+    },
+    {
+      "query": "Java code",
+      "mode": "hybrid",
+      "expected": [
+        "java.png"
+      ],
+      "actual": [
+        "java.png",
+        "logic.png",
+        "receipt.png",
+        "meeting.png",
+        "javascript.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 4,
+      "correct_empty": null,
+      "seconds": 0.6607
+    },
+    {
+      "query": "\"course registration\"",
+      "mode": "keyword",
+      "expected": [
+        "course.png"
+      ],
+      "actual": [
+        "course.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0002
+    },
+    {
+      "query": "ModuleNotFoundError",
+      "mode": "keyword",
+      "expected": [
+        "module_error.png"
+      ],
+      "actual": [
+        "module_error.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0001
+    },
+    {
+      "query": "missing package problem",
+      "mode": "hybrid",
+      "expected": [
+        "module_error.png"
+      ],
+      "actual": [
+        "module_error.png",
+        "git_error.png",
+        "syntax_error.png",
+        "notice.png",
+        "memory_error.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 4,
+      "correct_empty": null,
+      "seconds": 0.6718
+    },
+    {
+      "query": "\"database connection\"",
+      "mode": "keyword",
+      "expected": [
+        "database_error.png"
+      ],
+      "actual": [
+        "database_error.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0002
+    },
+    {
+      "query": "restaurant food options",
+      "mode": "hybrid",
+      "expected": [
+        "menu.png"
+      ],
+      "actual": [
+        "menu.png",
+        "receipt.png",
+        "recipe.png",
+        "python_sum.png",
+        "css.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 4,
+      "correct_empty": null,
+      "seconds": 0.6397
+    },
+    {
+      "query": "flight ticket",
+      "mode": "hybrid",
+      "expected": [],
+      "actual": [
+        "train.png",
+        "weather.png",
+        "receipt.png",
+        "java.png",
+        "logic.png"
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "irrelevant_results": 5,
+      "correct_empty": false,
+      "seconds": 0.624
+    }
+  ],
+  "mean_recall_at_5": 1.0,
+  "mean_reciprocal_rank": 0.925925925925926,
+  "correct_no_result_rate": 0.0
+}

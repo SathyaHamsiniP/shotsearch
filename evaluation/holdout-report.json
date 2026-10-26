@@ -1,0 +1,82 @@
+{
+  "note": "Synthetic fixtures measure a narrow baseline, not real-world accuracy. Timings exclude model startup.",
+  "split": "holdout",
+  "processing": {
+    "indexed": 25,
+    "unchanged": 0,
+    "reused": 0,
+    "empty": 1,
+    "failed": 0
+  },
+  "queries": [
+    {
+      "query": "PermissionError",
+      "mode": "keyword",
+      "expected": [
+        "permission_error.png"
+      ],
+      "actual": [
+        "permission_error.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0006
+    },
+    {
+      "query": "books due date",
+      "mode": "hybrid",
+      "expected": [
+        "notice.png"
+      ],
+      "actual": [
+        "notice.png",
+        "meeting.png",
+        "receipt.png",
+        "exercise.png",
+        "weather.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 4,
+      "correct_empty": null,
+      "seconds": 0.0131
+    },
+    {
+      "query": "Boolean logic",
+      "mode": "keyword",
+      "expected": [
+        "logic.png"
+      ],
+      "actual": [
+        "logic.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0002
+    },
+    {
+      "query": "dentist appointment",
+      "mode": "hybrid",
+      "expected": [],
+      "actual": [
+        "notice.png",
+        "menu.png",
+        "train.png",
+        "receipt.png",
+        "weather.png"
+      ],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "irrelevant_results": 5,
+      "correct_empty": false,
+      "seconds": 0.0123
+    }
+  ],
+  "mean_recall_at_5": 1.0,
+  "mean_reciprocal_rank": 1.0,
+  "correct_no_result_rate": 0.0
+}

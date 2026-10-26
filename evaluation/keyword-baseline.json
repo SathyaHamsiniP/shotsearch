@@ -1,0 +1,207 @@
+{
+  "note": "Synthetic fixtures measure a narrow baseline, not real-world accuracy. Timings exclude model startup.",
+  "split": "all",
+  "processing": {
+    "indexed": 25,
+    "unchanged": 0,
+    "reused": 0,
+    "empty": 1,
+    "failed": 0
+  },
+  "queries": [
+    {
+      "query": "traffic",
+      "mode": "keyword",
+      "expected": [
+        "traffic.png"
+      ],
+      "actual": [
+        "traffic.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0005
+    },
+    {
+      "query": "congestion",
+      "mode": "keyword",
+      "expected": [
+        "traffic.png"
+      ],
+      "actual": [],
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0
+    },
+    {
+      "query": "Python code",
+      "mode": "keyword",
+      "expected": [
+        "python_loop.png",
+        "python_sum.png"
+      ],
+      "actual": [],
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0
+    },
+    {
+      "query": "Java code",
+      "mode": "keyword",
+      "expected": [
+        "java.png"
+      ],
+      "actual": [],
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0001
+    },
+    {
+      "query": "\"course registration\"",
+      "mode": "keyword",
+      "expected": [
+        "course.png"
+      ],
+      "actual": [
+        "course.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0001
+    },
+    {
+      "query": "ModuleNotFoundError",
+      "mode": "keyword",
+      "expected": [
+        "module_error.png"
+      ],
+      "actual": [
+        "module_error.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0001
+    },
+    {
+      "query": "missing package problem",
+      "mode": "keyword",
+      "expected": [
+        "module_error.png"
+      ],
+      "actual": [],
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0
+    },
+    {
+      "query": "\"database connection\"",
+      "mode": "keyword",
+      "expected": [
+        "database_error.png"
+      ],
+      "actual": [
+        "database_error.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0001
+    },
+    {
+      "query": "restaurant food options",
+      "mode": "keyword",
+      "expected": [
+        "menu.png"
+      ],
+      "actual": [],
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0
+    },
+    {
+      "query": "flight ticket",
+      "mode": "keyword",
+      "expected": [],
+      "actual": [],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "irrelevant_results": 0,
+      "correct_empty": true,
+      "seconds": 0.0
+    },
+    {
+      "query": "PermissionError",
+      "mode": "keyword",
+      "expected": [
+        "permission_error.png"
+      ],
+      "actual": [
+        "permission_error.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0001
+    },
+    {
+      "query": "books due date",
+      "mode": "keyword",
+      "expected": [
+        "notice.png"
+      ],
+      "actual": [],
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0
+    },
+    {
+      "query": "Boolean logic",
+      "mode": "keyword",
+      "expected": [
+        "logic.png"
+      ],
+      "actual": [
+        "logic.png"
+      ],
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "irrelevant_results": 0,
+      "correct_empty": null,
+      "seconds": 0.0001
+    },
+    {
+      "query": "dentist appointment",
+      "mode": "keyword",
+      "expected": [],
+      "actual": [],
+      "recall_at_5": null,
+      "reciprocal_rank": null,
+      "irrelevant_results": 0,
+      "correct_empty": true,
+      "seconds": 0.0
+    }
+  ],
+  "mean_recall_at_5": 0.5,
+  "mean_reciprocal_rank": 0.5,
+  "correct_no_result_rate": 1.0
+}
